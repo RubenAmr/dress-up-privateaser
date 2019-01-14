@@ -1,23 +1,64 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Privateaser</title>
-  </head>
-  <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
-  </body>
+	<head>
+		<title>Privateaser</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-theme.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
+
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header" >
+				<h1>Privateaser</h1>
+				<p>RÉSERVEZ INSTANTANÉMENT UN LIEU ORIGINAL 
+					POUR VOTRE ÉVÈNEMENT</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="#">
+				
+				<div id="bar">
+					<input class="js-name" type="text" placeholder="Bar name"/>
+					<input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+					<input class="js-price-by-person" type="number" placeholder="Price by person"/>
+				  </div>
+				  <div id="booker">
+					<input class="js-name" type="text" placeholder="Booker name"/>
+					<input class="js-time" type="number" placeholder="Time in h"/>
+					<input class="js-persons" type="number" placeholder="Persons"/>
+					<input class="js-option" type="checkbox" placeholder="Deductible option"/>
+					
+
+				  </div>
+				  <button id="compute">Compute</button>
+
+				  <div id="actors"></div>
+			</form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Ruben Amar.</li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/privateaser.js"></script>
+    		<script src="assets/js/index.js"></script>
+
+	</body>
 </html>
